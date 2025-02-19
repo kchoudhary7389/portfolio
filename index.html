@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K &#9679; PORTFOLIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="./images/xing.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="loader w-full h-screen bg-black fixed z-[1000] flex items-end justify-end px-20">
+        <div class="loader-text text-[300px]">0%</div>
+        <div
+            class="loader-coming flex justify-center items-center opacity-0 text-9xl w-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 uppercase text-[#F3A615]">
+            It's Coming</div>
+    </div>
+    <div class="navbar w-full fixed z-50">
+        <div class="nav z-50 relative w-full h-20 bg-[#314833] flex items-center justify-between px-10">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-['Neue_Machina'] italic text-[#F3A615]"> Krishna</h1>
+            </div>
+            <i class="ri-menu-3-line text-3xl hamburger cursor-pointer text-[#F3A615]"></i>
+        </div>
+        <div class="navlinks flex flex-col items-center justify-center text-5xl text-center bg-[white] text-[#F3A615] ">
+            <a class="inline-block w-full  py-5 border-b-2 border-[#F3A615]" href="#">Home</a>
+            <a class="inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#about">About</a>
+            <a class="inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#services">Services</a>
+            <a class="inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#project">Project</a>
+            <a class="inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#skills">Skills</a>
+            <span class="contact-link inline-block w-full py-5 border-b-2 border-[#F3A615]" href="">Get In Touch</span>
+        </div>
+    </div>
+    <div
+        class="getintouch hidden fixed w-full h-full z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="touch w-[70%] h-[70%] bg-[#314833] text-white p-10 rounded-lg relative shadow-2xl">
+            <!-- Close Button -->
+            <span
+                class="close inline-block absolute top-4 right-4 text-3xl cursor-pointer text-gray-300 hover:text-white transition">
+                ❌
+            </span>
+
+            <!-- Heading -->
+            <h1 class="text-4xl text-[#F3A615] uppercase text-center pb-8 font-bold">Get In Touch</h1>
+
+            <!-- Contact Info -->
+            <div class="w-full h-[70%] flex flex-col items-center justify-center gap-8">
+                <div class="email info text-2xl md:text-3xl flex flex-col text-center">
+                    <span class="text-[#F3A615] font-semibold">EMAIL</span>
+                    <span class="text-gray-200">kchoudhary7389@gmail.com</span>
+                </div>
+                <div class="phone info text-2xl md:text-3xl flex flex-col text-center">
+                    <span class="text-[#F3A615] font-semibold">PHONE</span>
+                    <span class="text-gray-200">+91 7389206310</span>
+                </div>
+                <div class="address info text-2xl md:text-3xl flex flex-col text-center">
+                    <span class="text-[#F3A615] font-semibold">ADDRESS</span>
+                    <span class="text-gray-200">Dewas, Madhya Pradesh</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main w-full relative">
+        <nav class="font-['Neue_Machina'] z-40 w-full h-24px px-[50px] fixed flex items-center justify-between text-xl">
+            <div class="logo flex items-center">
+                <h1 class="text-2xl text-[#F3A615]"> Krishna</h1>
+            </div>
+            <ul class="nav-menu flex items-center gap-5">
+                <li class="relative navlink">
+                    <div
+                        class="overlay z-10 top-0 left-0 absolute w-full -translate-y-[150%] h-1/2 bottom-0 bg-[#F3A615]">
+                    </div>
+                    <div class="overlay1 left-0 z-10 absolute w-full translate-y-[100%] h-1/2 bottom-0 bg-[#F3A615]">
+                    </div>
+                    <a class="z-20 text-white" href="#about">About Me</a>
+                </li>
+                <li class="relative navlink">
+                    <div
+                        class="overlay z-10 top-0 left-0 absolute w-full -translate-y-[150%] h-1/2 bottom-0 bg-[#F3A615]">
+                    </div>
+                    <div class="overlay1 left-0 z-10 absolute w-full translate-y-[100%] h-1/2 bottom-0 bg-[#F3A615]">
+                    </div>
+                    <a class="z-20 text-white" href="#services">Services</a>
+                </li>
+                <li class="relative navlink">
+                    <div
+                        class="overlay z-10 top-0 left-0 absolute w-full -translate-y-[150%] h-1/2 bottom-0 bg-[#F3A615]">
+                    </div>
+                    <div class="overlay1 left-0 z-10 absolute w-full translate-y-[100%] h-1/2 bottom-0 bg-[#F3A615]">
+                    </div>
+                    <a class="z-20 text-white" href="#project">Project</a>
+                </li>
+                <li class="relative navlink ">
+                    <div
+                        class="overlay z-10 top-0 left-0 absolute w-full -translate-y-[150%] h-1/2 bottom-0 bg-[#F3A615]">
+                    </div>
+                    <div class="overlay1 left-0 z-10 absolute w-full translate-y-[100%] h-1/2 bottom-0 bg-[#F3A615]">
+                    </div>
+                    <a class="z-20 text-white" href="#skills">Skills</a>
+                </li>
+                <li class="relative navlink contact-link">
+                    <h4
+                        class="linkedin relative z-30 inline-block text-xl border-2 border-[#F3A615] px-5 py-2 rounded-full">
+                        <a href="#" class="z-30">Get in touch <i class="ri-arrow-right-up-line"></i></a>
+                    </h4>
+                </li>
+            </ul>
+        </nav>
+        <div
+            class="front-page bg-[#314833]  sm:px-[50px] px-5 w-[full] min-h-screen flex items-center justify-around relative  z-30">
+            <h1 class=" portfolio-text font-['Neue_Machina'] absolute text-7xl  top-32 left-40 z-30">PORTFOLIO</h1>
+
+            <h1 class=" portfolio-text font-['Neue_Machina'] absolute text-7xl  bottom-32 left-40 z-30">PORTFOLIO</h1>
+            <div class="user-img border-img w-96 h-96 rounded-full flex items-center justify-center overflow-hidden">
+                <img class="w-[95%] h-[95%] object-cover object-top z-20 rounded-full" src="./images/me.jpg" alt="">
+            </div>
+            <div class="img-text min-w-96 h-96 flex items-center relative z-30">
+                <div class="font-['Averia_Gruesa_Libre'] sm:pl-0 pl-5">
+                    <div class="animetext overflow-hidden w-fit">
+                        <h3 class="anime text-2xl leading-[50px]">HELLO!</h3>
+                    </div>
+                    <div class="animetext overflow-hidden w-fit">
+                        <h1 class=" anime text-7xl"> I'm <span class="text-[#F3A615] ">KRISHNA</span>
+                        </h1>
+                    </div>
+                    <div class="animetext overflow-hidden w-fit">
+                        <h2 class="anime text-3xl text-[#F3A615] "><span class="typed"></span></h2>
+                    </div>
+                    <div class="animetext overflow-hidden w-fit">
+                        <h4
+                            class="anime animebtn linkedin relative z-30 inline-block text-2xl border-2 border-[#F3A615] px-5 py-2 rounded-full mt-5">
+                            <a href="https://www.linkedin.com/in/krishna-choudhary-819a58256/" target="_blank"
+                                class="z-30">LinkedIn <i class="ri-arrow-right-up-line"></i></a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <p class="random-text absolute bottom-5 left-36 w-72 font-['Neue_Machina'] z-20 ">A Full Stack Web Developer
+                specializing in the MERN stack. I build dynamic and interactive web applications, leveraging modern
+                frameworks and libraries for seamless user experiences.</p>
+        </div>
+        <div
+            class="svg w-full bg-[#314833] h-[260px] flex items-center justify-center flex-col px-[50px] relative z-30">
+            <svg class="m-auto" width="80%" height="180" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 50 90 Q 700 90 1070 90" stroke="white" fill="transparent" />
+            </svg>
+            <h1 class="text-center text-4xl text-[#F3A615]">⬆️ Hover and Explore this line ⬆️</h1>
+        </div>
+        <div id="about"
+            class="about bg-[#314833] w-full min-h-screen px-[100px] flex items-center gap-10 justify-center relative z-30">
+            <div class="left-about w-96 h-[70%] border-4 border-[#F3A615]">
+                <img class="w-full h-full object-cover object-top -translate-x-9 -translate-y-9 rounded-lg"
+                    src="./images/mern-stack11.png" alt="">
+            </div>
+            <div class="right-about w-[53%] font-['Neue_Machina']">
+                <h1 class="text-4xl pb-5 about-heading relative inline-block">ABOUT ME</h1>
+                <p class="leading-7 text-xl"> "Hi there! I'm Krishna Choudhary, a budding Full Stack Web Developer
+                    passionate about building dynamic and responsive websites. I specialize in the MERN stack and also
+                    have experience with PHP and MySQL. Recently, I’ve been focusing on creating seamless and efficient
+                    web applications. 💻✨"
+                </p>
+                <div class="personal-dets w-full p-5 border-2 border-[#F3A615] flex items-center my-5 rounded-lg">
+                    <div class="left w-1/2">
+                        <h3 class="text-xl leading-10"><span class="font-bold">Name : </span>Krishna choudhary</h3>
+                        <h3 class="text-xl leading-10"><span class="font-bold">Phone : </span>+91 7389206310</h3>
+                        <h3 class="text-xl leading-10"><span class="font-bold">Experience : </span>Fresher</h3>
+                        <h3 class="text-xl leading-10"><span class="font-bold">Instagram : </span>krishna_8269__</h3>
+                    </div>
+                    <div class="right w-1/2">
+                        <h3 class="text-xl leading-10"><span class="font-bold">Age : </span>19</h3>
+                        <h3 class="text-xl leading-10"><span class="font-bold">Address : </span>Dewas, [M.P.]</h3>
+                        <h3 class="text-xl leading-10"><span class="font-bold">Hobbies : </span>Cricket, Coding</h3>
+                        <h3 class="text-xl leading-10"><span class="font-bold">LinkedIn : </span>Krishna Choudhary</h3>
+                    </div>
+                </div>
+                <h4
+                    class="resume relative inline-block px-5 text-xl rounded-full border-2 border-[#F3A615] py-2 font-['Averia_Gruesa_Libre']">
+                    <a target="_blank" href="resume.pdf">RESUME <i class="ri-arrow-right-line"></i></a>
+                </h4>
+            </div>
+        </div>
+        <div id="services" class="service w-full bg-[#314833] px-[100px] flex items-start gap-20 relative z-30">
+            <div class="left-service w-[40%] py-10 font-['Neue_Machina'] sticky top-[15%]">
+                <h1 class="text-5xl py-8 text-center heading">Services</h1>
+                <p class="text-2xl remove">I build full-stack web applications that are both powerful and user-friendly.
+                    Each project is crafted using the MERN stack to meet your unique needs.</p>
+                <h1 class="text-6xl text-left py-4 leading-[70px] remove">Here is my Services <i
+                        class="ri-arrow-right-line"></i></h1>
+            </div>
+
+            <div class="right-service w-1/2 py-10 mt-[400px] flex flex-col gap-10 items-end">
+                <div
+                    class="box rounded-md w-[80%] h-40 border-2 border-white p-10 flex items-center justify-between gap-5">
+                    <div class="left-box w-[70%]">
+                        <h1 class="text-3xl pb-3 font-['Neue_Machina']">Web development</h1>
+                        <p class="">I develop dynamic, responsive websites that deliver a seamless user
+                            experience, tailored to your business development needs.</p>
+                    </div>
+                    <div class="right-box w-[30%] flex items-center justify-center"><img class="w-1/2"
+                            src="./images/website-codes.png" alt=""></div>
+                </div>
+
+                <div
+                    class="box rounded-md w-[80%] h-40 border-2 border-white p-10 flex items-center justify-between gap-5">
+                    <div class="left-box w-[70%]">
+                        <h1 class="text-3xl pb-3 font-['Neue_Machina']">UI/UX Design</h1>
+                        <p class="">I create engaging web designs with captivating animations, focusing on
+                            aesthetics, usability, and brand consistency.</p>
+                    </div>
+                    <div class="right-box w-[30%] flex items-center justify-center"><img class="w-1/2"
+                            src="./images/user-experience.png" alt=""></div>
+                </div>
+
+                <div
+                    class="box rounded-md w-[80%] h-40 border-2 border-white p-10 flex items-center justify-between gap-5">
+                    <div class="left-box w-[70%]">
+                        <h1 class="text-3xl pb-3 font-['Neue_Machina']">Web designing</h1>
+                        <p class="">I develop dynamic, responsive websites that deliver a seamless user
+                            experience, tailored to your business development needs.</p>
+                    </div>
+                    <div class="right-box w-[30%] flex items-center justify-center"><img class="w-1/2"
+                            src="./images/web-design.png" alt=""></div>
+                </div>
+
+                <div
+                    class="box rounded-md w-[80%] h-40 border-2 border-white p-10 flex items-center justify-between gap-5">
+                    <div class="left-box w-[70%]">
+                        <h1 class="text-3xl pb-3 font-['Neue_Machina']">Responsiveness</h1>
+                        <p class="">I ensure your websites are fully responsive. My designs adapt effortlessly
+                            to different screen sizes for optimal usability</p>
+                    </div>
+                    <div class="right-box w-[30%] flex items-center justify-center"><img class="w-1/2"
+                            src="./images/responsive-design.png" alt=""></div>
+                </div>
+
+                <div
+                    class="box rounded-md w-[80%] h-40 border-2 border-white p-10 flex items-center justify-between gap-5">
+                    <div class="left-box w-[70%]">
+                        <h1 class="text-3xl pb-3 font-['Neue_Machina']">Creative design</h1>
+                        <p class="">I specialize in creatively designing animated websites that blend
+                            innovation with functionality.</p>
+                    </div>
+                    <div class="right-box w-[30%] flex items-center justify-center"><img class="w-1/2"
+                            src="./images/design-thinking.png" alt=""></div>
+                </div>
+                <div
+                    class="box rounded-md w-[80%] h-40 border-2 border-white p-10 flex items-center justify-between gap-5">
+                    <div class="left-box w-[70%]">
+                        <h1 class="text-3xl pb-3 font-['Neue_Machina']">Mern Stack</h1>
+                        <p class=""> I build dynamic and scalable web applications using the MERN stack,
+                            ensuring efficiency and a great user experience.
+                        </p>
+                    </div>
+                    <div class="right-box w-[30%] flex items-center justify-center"><img class="w-1/2"
+                            src="./images/website-codes.png" alt=""></div>
+                </div>
+
+            </div>
+        </div>
+        <div id="project"
+            class="project overflow-hidden bg-[#314833] w-full pt-32 p-[100px] flex justify-center flex-col relative z-30">
+            <h1 class="text-5xl text-center uppercase">Projects</h1>
+            <div
+                class="first-project w-full sm:mt-32 mt-20 flex flex-col md:flex-row items-center justify-between gap-10 px-0 md:px-0">
+                <!-- Text Section -->
+                <div class="w-full md:w-1/2 flex flex-col items-center justify-center gap-5">
+                    <h1 class="text-4xl font-bold text-[#F3A615]">Project 1</h1>
+                    <p class="animepara sm:text-lg text-base leading-7 text-center">
+                        I developed a comprehensive Complaint Management System using the MERN stack. This project
+                        enables users to register, log in, and lodge complaints seamlessly. Users can track their
+                        complaints, while admins manage and respond with remarks efficiently.
+                    </p>
+                    <h4
+                        class="resume relative inline-block px-5 text-lg rounded border-2 border-[#F3A615] py-2 font-['Averia_Gruesa_Libre'] text-[#F3A615] hover:text-white">
+                        <a target="_blank" href="https://complaint-management-system-cms.vercel.app/">View Live</a>
+                    </h4>
+                </div>
+
+                <!-- Image Section -->
+                <div class="img-1 w-full md:w-1/2 flex justify-center translate-x-full">
+                    <img class="w-full max-w-[600px] rounded-lg shadow-lg"
+                        src="./images/Complaint-Management-System-02-13-2025_07_37_PM.png" alt="Project Image">
+                </div>
+            </div>
+
+
+            <div
+                class="second-project w-full sm:mt-32 mt-20 flex flex-col md:flex-row-reverse md:flex-row items-center justify-between gap-10 px-0 md:px-0">
+                <!-- Text Section -->
+                <div class="w-full md:w-1/2 flex flex-col items-center justify-center gap-5">
+                    <h1 class="text-4xl text-left font-bold text-[#F3A615]">Project 2</h1>
+                    <p class="animepara sm:text-lg text-base leading-7 text-center">
+                        I developed a comprehensive Doctor Management System using PHP and MySQL. This project allows
+                        users
+                        to register, log in, and book appointments seamlessly. Doctors and admins can manage
+                        appointments, with doctors having the option to accept or cancel them.
+                    </p>
+                    <h4
+                        class="resume relative inline-block px-5 text-lg rounded border-2 border-[#F3A615] py-2 font-['Averia_Gruesa_Libre'] text-[#F3A615] hover:text-white">
+                        <a target="_blank" href="https://doctormanagementsystem.lovestoblog.com/">View Live</a>
+                    </h4>
+                </div>
+
+                <!-- Image Section -->
+                <div class="img-2 w-full md:w-1/2 flex justify-center">
+                    <img class="w-full max-w-[600px] rounded-lg shadow-lg" src="./images/hospital.png"
+                        alt="Project Image">
+                </div>
+            </div>
+
+            <div
+                class="third-project w-full sm:mt-32 mt-20 flex flex-col md:flex-row items-center justify-between gap-10 px-0 md:px-0">
+                <!-- Text Section -->
+                <div class="w-full md:w-1/2 flex flex-col items-center justify-center gap-5">
+                    <h1 class="text-4xl text-left font-bold text-[#F3A615]">Project 3</h1>
+                    <p class="animepara sm:text-lg text-base leading-7 text-center">
+                        I developed a dynamic Weather App using React that provides real-time weather updates for any
+                        city. It fetches data from WeatherAPI, displaying temperature, humidity, and conditions with
+                        a clean UI. Fully responsive, it ensures a seamless experience across all devices.
+                    </p>
+                    <h4
+                        class="resume relative inline-block px-5 text-lg rounded border-2 border-[#F3A615] py-2 font-['Averia_Gruesa_Libre'] text-[#F3A615] hover:text-white">
+                        <a target="_blank" href="https://unique-weather-app.netlify.app/">View Live</a>
+                    </h4>
+                </div>
+
+                <!-- Image Section -->
+                <div class="img-3 w-full md:w-1/2 flex justify-center">
+                    <img class="w-full max-w-[600px] rounded-lg shadow-lg" src="./images/Weather.png"
+                        alt="Project Image">
+                </div>
+            </div>
+
+
+            <!-- <div class="second-project w-[40%] mt-20">
+                <p class="animepara text-xl text-center m-auto leading-10">
+                    I developed a comprehensive Doctor Management System using PHP and MySQL. This project allows users
+                    to register, log in, and book appointments seamlessly. Doctors and admins can manage appointments,
+                    with doctors having the option to accept or cancel them. Featuring secure authentication and an
+                    intuitive interface, it ensures smooth coordination between patients, doctors, and administrators.
+                    Built with PHP and MySQL, it provides efficiency, reliability, and a structured approach to managing
+                    healthcare appointments.</p>
+                <h3 class="text-2xl text-center text-[#F3A615] py-5 font-['Neue_Machina']">Hospital Management System
+                </h3>
+                <h3 class="text-center pb-6">
+                    <a href="https://doctormanagementsystem.lovestoblog.com/" target="_blank"
+                        class="inline-block text-xl underline text-[#F3A615]">Click Here For Visit</a>
+                </h3>
+                <h5 class="text-center text-xl">Made by @ Krishna</h5>
+            </div> -->
+        </div>
+        <div id="skills" class="skills border-b-8 border-[#F3A615] bg-[#314833] w-full py-24 relative z-30">
+            <h1 class="text-center text-5xl italic "><span class="text-[#F3A615]">Creative</span> Web Developer</h1>
+            <div class="skill-set w-2/3 h-96 m-auto mt-10 flex items-start justify-center">
+                <div class="left-skill w-1/2 h-full py-5 flex flex-col justify-between">
+                    <div class="">
+                        <h1 class="text-3xl italic font-medium">STAND OUT IN A CROWDED ONLINE MARKET WITH UNIQUE WEB
+                            DESIGN</h1>
+                        <h3 class="p-5 text-[#F3A615] italic">SIMPLICITY IS KEY <div
+                                class="keyline inline-block w-0 h-[2px] bg-[#F3A615]"></div> <i
+                                class="ri-key-2-fill text-xl"></i></h3>
+                    </div>
+                    <div class="">
+                        <h4
+                            class="linkedin relative text-sm z-30 inline-block sm:text-2xl border-2 border-[#F3A615] px-5 py-2 rounded-full mt-5">
+                            <a href="https://complaint-management-system-cms.vercel.app/" target="_blank"
+                                class="z-30">Complaint
+                                Management System <i class="ri-arrow-right-up-line"></i></a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="right-skill">
+                    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/web-developer-5019746-4183733.png?f=webp"
+                        alt="">
+                </div>
+            </div>
+            <div class="anime-skill sm:block hidden w-full m-auto mt-32 whitespace-nowrap overflow-x-auto relative">
+                <div class="move-left absolute w-[30%] h-full z-20"></div>
+                <div class="move-right absolute w-[30%] h-full z-20 right-0"></div>
+                <div class="w-full">
+                    <div class="move inline-block w-max">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/html.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/css-3.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/js.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/tailwind.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/react.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/node.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/mongodb.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/php.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/Mysql_logo.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/wordpress.png" alt="">
+                    </div>
+                    <div class="move inline-block w-max flex-wrap ">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/html.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/css-3.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/js.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/tailwind.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/react.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/node.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/mongodb.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/php.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/Mysql_logo.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/wordpress.png" alt="">
+                    </div>
+                    <div class="move inline-block w-max flex-wrap ">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/html.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/css-3.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/js.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/tailwind.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/react.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/node.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/mongodb.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/php.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/Mysql_logo.png" alt="">
+                        <img class="sm:w-24 w-16 inline-block whitespace-nowrap" src="./images/wordpress.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <h1 class="web-exp text-center text-3xl tracking-tighter mt-10 italic">Crafting seamless <span
+                    class="text-[#F3A615]"> web experiences</span> with every tool I master.</h1>
+        </div>
+        <div class="page5 w-full sm:h-[60vh] h-screen bg-transparent z-10 relative"></div>
+
+    </div>
+    <div class="contact w-full h-1/2 fixed bottom-0 z-20 text-[#F3A615] bg-white pt-[2%] bg-black">
+        <footer
+            class="h-full sm:w-full w-full bg-[#314833] text-white border-t-2 border-gray-600 flex flex-col justify-between p-8 md:p-12">
+            <div class="flex flex-col md:flex-row justify-between items-start">
+                <!-- Name & Bio Section -->
+                <div class="flex flex-col text-left max-w-lg">
+                    <h2 class="text-3xl font-bold text-white">Krishna Choudhary</h2>
+                    <p class="text-gray-300 mt-3 leading-relaxed">
+                        Full Stack Web Developer specializing in the MERN stack and PHP.
+                        Passionate about creating dynamic, user-friendly, and scalable web applications.
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex flex-col items-start md:items-end mt-6 md:mt-0 space-y-2 md:space-y-3">
+                    <a href="#about" class="text-lg hover:text-gray-300 transition">About</a>
+                    <a href="#skills" class="text-lg hover:text-gray-300 transition">Skills</a>
+                    <a href="#project" class="text-lg hover:text-gray-300 transition">Projects</a>
+                    <a href="#services" class="text-lg hover:text-gray-300 transition">Services</a>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div
+                class="flex flex-col md:flex-row border-t border-gray-500 justify-between items-center mt-8 pt-6 px-16">
+                <p class="text-sm text-gray-400">© 2024 Krishna Choudhary. All rights reserved.</p>
+
+                <!-- Social Media Links -->
+                <div class="flex space-x-6 mt-4 md:mt-0 text-2xl">
+                    <a href="https://github.com/kchoudhary7389" target="_blank" class="hover:text-gray-300 transition">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/krishna-choudhary-819a58256/" target="_blank"
+                        class="hover:text-gray-300 transition">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a href="mailto:your@email.com" class="hover:text-gray-300 transition">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <div
+        class="toppage fixed w-12 h-12 bg-[#F3A615] bottom-0 right-0 z-50 m-7 rounded-full cursor-pointer flex items-center justify-center">
+        <i class="ri-arrow-up-double-fill text-4xl"></i>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        let typed = new Typed(".typed", {
+            strings: ["Full Stack Web Developer,", "Coder,", "Web Designer,"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

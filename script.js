@@ -276,6 +276,25 @@ function project() {
       },
     }
   );
+  gsap.fromTo(
+    ".img-4",
+    {
+      x: "-100%",
+      opacity: 0,
+      duration: 1,
+    },
+    {
+      x: 0,
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".fourth-project",
+        start: "top 120%",
+        end: "bottom 50%",
+        scrub: 1,
+      },
+    }
+  );
   // gsap.fromTo(
   //   ".right-about",
   //   {

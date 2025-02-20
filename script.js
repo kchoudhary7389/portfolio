@@ -348,19 +348,6 @@ function skill() {
   });
 }
 
-function footer() {
-  gsap.set(".simplicity span", {
-    opacity: 0.1,
-  });
-  gsap.to(".simplicity span", {
-    opacity: 1,
-    duration: 0.2,
-    repeat: -1,
-    stagger: 0.1,
-    yoyo: true,
-  });
-}
-
 function getintouch() {
   let contact = document.querySelector(".getintouch");
   let contact2 = document.querySelector(".touch");
@@ -407,5 +394,4 @@ pageanime();
 project();
 serviceanime();
 skill();
-footer();
 getintouch();

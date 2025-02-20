@@ -28,19 +28,29 @@
     <div class="navbar w-full fixed z-50">
         <div class="nav z-50 relative w-full h-16 bg-[#314833] flex items-center justify-between px-10">
             <div class="flex items-center">
-                <h1 class="text-2xl font-['Neue_Machina'] italic text-[#F3A615]"> Krishna</h1>
+                <h1 class="text-2xl font-['Neue_Machina'] text-[#F3A615]"> Krishna</h1>
             </div>
-            <i class="ri-menu-3-line text-3xl hamburger cursor-pointer text-[#F3A615]"></i>
+            <!-- Menu Button -->
+            <div class="hamburger w-8 h-6 flex flex-col justify-between cursor-pointer z-50" onclick="toggleMenu()">
+                <span class="block w-full h-1 bg-[#F3A615] transition-all duration-300"></span>
+                <span class="block w-full h-1 bg-[#F3A615] transition-all duration-300"></span>
+                <span class="block w-full h-1 bg-[#F3A615] transition-all duration-300"></span>
+            </div>
         </div>
-        <div class="navlinks border-b-2 border-t-2 border-[#F3A615] flex flex-col items-center justify-center text-5xl text-center bg-[#314833] text-[#F3A615] ">
-            <a class="inline-block w-full  py-5 border-b-2 border-[#F3A615]" href="#">Home</a>
-            <a class="inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#about">About</a>
-            <a class="inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#services">Services</a>
-            <a class="inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#project">Project</a>
-            <a class="inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#skills">Skills</a>
-            <span class="contact-link inline-block w-full py-5 border-b-2 border-[#F3A615]" href="">Get In Touch</span>
+        <!-- Nav Links -->
+        <div
+            class="navlinks border-b-2 border-t-2 border-[#F3A615] flex flex-col items-center justify-center text-5xl text-center bg-[#314833] text-[#F3A615]">
+            <a class="links inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#">Home</a>
+            <a class="links inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#about">About</a>
+            <a class="links inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#services">Services</a>
+            <a class="links inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#project">Project</a>
+            <a class="links inline-block w-full py-5 border-b-2 border-[#F3A615]" href="#skills">Skills</a>
+            <span class="contact-link links inline-block w-full py-5 border-b-2 border-[#F3A615]">Get In Touch</span>
         </div>
     </div>
+
+
+
     <div
         class="getintouch hidden fixed w-full h-full z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center bg-black bg-opacity-50">
         <div class="touch w-[70%] h-[70%] bg-[#314833] text-white p-10 rounded-lg relative shadow-2xl">
@@ -512,6 +522,34 @@
             backSpeed: 100,
             loop: true
         });
+    </script>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".navlinks");
+            const bars = document.querySelectorAll(".hamburger span");
+            const links = document.querySelectorAll('.links')
+
+
+
+            // menu.classList.toggle("hidden");
+
+            // Animate the hamburger into a close button
+            bars[0].classList.toggle("rotate-45");
+            bars[1].classList.toggle("opacity-0");
+            bars[2].classList.toggle("-rotate-45");
+
+            // Adjust position for better alignment
+            bars[0].classList.toggle("translate-y-[10px]");
+            bars[2].classList.toggle("-translate-y-[10px]");
+
+            links.forEach(function (link) {
+                link.addEventListener("click", () => {
+                    const menu = document.querySelector(".navlinks");
+
+                    toggleMenu();
+                });
+            })
+        }
     </script>
 </body>
 
